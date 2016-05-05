@@ -2,7 +2,7 @@
 .\output\adc.o: ..\BSP\ADC\adc.h
 .\output\adc.o: ..\CMSIS\stm32f10x.h
 .\output\adc.o: ..\CMSIS\core_cm3.h
-.\output\adc.o: F:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\output\adc.o: E:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
 .\output\adc.o: ..\CMSIS\system_stm32f10x.h
 .\output\adc.o: ..\USER\stm32f10x_conf.h
 .\output\adc.o: ..\LIB\inc\stm32f10x_adc.h

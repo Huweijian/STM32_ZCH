@@ -2,7 +2,7 @@
 .\output\systick.o: ..\BSP\SysTick\SysTick.h
 .\output\systick.o: ..\CMSIS\stm32f10x.h
 .\output\systick.o: ..\CMSIS\core_cm3.h
-.\output\systick.o: F:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\output\systick.o: E:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
 .\output\systick.o: ..\CMSIS\system_stm32f10x.h
 .\output\systick.o: ..\USER\stm32f10x_conf.h
 .\output\systick.o: ..\LIB\inc\stm32f10x_adc.h

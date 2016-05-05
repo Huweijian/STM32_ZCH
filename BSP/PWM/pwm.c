@@ -55,7 +55,7 @@ static void TIM3_Mode_Config(void)
 	TIM_OCInitTypeDef  TIM_OCInitStructure;
 
 	/* PWM信号电平跳变值 */
-	u16 CCR1_Val = 9000;       
+	u16 CCR1_Val = 500;       
 /* -----------------------------------------------------------------------
     TIM3 Configuration: generate 4 PWM signals with 4 different duty cycles:
     TIM3CLK = 36 MHz, Prescaler = 0x0, TIM3 counter clock = 36 MHz
@@ -68,8 +68,8 @@ static void TIM3_Mode_Config(void)
   ----------------------------------------------------------------------- */
 
   /* Time base configuration */		 
-  TIM_TimeBaseStructure.TIM_Period = 17999;       //当定时器从0计数到999，即为1000次，为一个定时周期
-  TIM_TimeBaseStructure.TIM_Prescaler = 3;	    //设置预分频：不预分频，即为36MHz
+  TIM_TimeBaseStructure.TIM_Period = 999;       //当定时器从0计数到999，即为1000次，为一个定时周期
+  TIM_TimeBaseStructure.TIM_Prescaler = 1;	    //设置预分频：不预分频，即为36MHz
   TIM_TimeBaseStructure.TIM_ClockDivision = 0;	//设置时钟分频系数：不分频
   TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;  //向上计数模式
 

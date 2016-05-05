@@ -2,7 +2,7 @@
 .\output\pwm.o: ..\BSP\PWM\pwm.h
 .\output\pwm.o: ..\CMSIS\stm32f10x.h
 .\output\pwm.o: ..\CMSIS\core_cm3.h
-.\output\pwm.o: F:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\output\pwm.o: E:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
 .\output\pwm.o: ..\CMSIS\system_stm32f10x.h
 .\output\pwm.o: ..\USER\stm32f10x_conf.h
 .\output\pwm.o: ..\LIB\inc\stm32f10x_adc.h

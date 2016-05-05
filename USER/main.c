@@ -27,19 +27,19 @@ void RCC_Configuration(void);
 *******************************************************************************/
 int main(void)
 {
-	u16 AdcValue = 0;			//ADC转换值
+	u16 adcvalue = 0;			//ADC转换值
 	u8 buff[4];					//串口发送缓冲区
 
-	SystemInit();
-	//RCC_Configuration();		//设置系统时钟为72MHZ
-	/*ADC1_Init_Config();			//ADC1初始化配置
+	//SystemInit();
+	RCC_Configuration();		//设置系统时钟为72MHZ
+	ADC1_Init_Config();			//ADC1初始化配置
 	USART1_Init_Config(9600);	//USART1初始化配置
 	USART2_Init_Config(9600);
 	SysTick_Init_Config();		//初始化系统滴答时钟SysTick
 	LED_GPIO_Config();
-	KEY_GPIO_Config();*/
+	KEY_GPIO_Config();
 	TIM3_PWM_Init();
-
+	
 	
 	while (1)
 	{/*
@@ -47,23 +47,24 @@ int main(void)
 		Delay_nS(1);
 		LED_OFF();
 		Delay_nS(1);*/
-
 		
-	/*
-		AdcValue = ADC1_Get_AdcValue(0); //读取并返回ADC对应通道的AD转换值   
-		buff[0] = (u8)(AdcValue>>8);
-		buff[1] = (u8)(AdcValue);
+		
+	
+		adcvalue = ADC1_Get_AdcValue(0); //读取并返回adc对应通道的ad转换值   
+		buff[0] = (u8)(adcvalue>>8);
+		buff[1] = (u8)(adcvalue);
 		buff[2] = 0x0d;
 		buff[3] = 0x0a;
 		USART2_SendData(buff, 4);	
-		Delay_nS(1); //延时1S
+		Delay_nS(1); //延时1s
+		
 		if(Usart1_R_State == 1)//一帧数据接收完成
 		{
-			USART1_SendData((u8 *)Usart1_R_Buff, Usart1_R_Count);//USART1发送数据缓冲区数据(发送刚接收完成的一帧数据)
+			USART1_SendData((u8 *)Usart1_R_Buff, Usart1_R_Count);//usart1发送数据缓冲区数据(发送刚接收完成的一帧数据)
 			Usart1_R_State =0;
 			Usart1_R_Count =0;
 		}
-		*/
+		
 	}
 }
 

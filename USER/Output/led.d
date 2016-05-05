@@ -2,7 +2,7 @@
 .\output\led.o: ..\BSP\LED\Led.h
 .\output\led.o: ..\CMSIS\stm32f10x.h
 .\output\led.o: ..\CMSIS\core_cm3.h
-.\output\led.o: F:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\output\led.o: E:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
 .\output\led.o: ..\CMSIS\system_stm32f10x.h
 .\output\led.o: ..\USER\stm32f10x_conf.h
 .\output\led.o: ..\LIB\inc\stm32f10x_adc.h

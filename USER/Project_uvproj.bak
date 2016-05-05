@@ -119,7 +119,7 @@
             <Oh166RecLen>16</Oh166RecLen>
           </OPTHX>
           <Simulator>
-            <UseSimulator>0</UseSimulator>
+            <UseSimulator>1</UseSimulator>
             <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
             <RunToMain>1</RunToMain>
             <RestoreBreakpoints>1</RestoreBreakpoints>
@@ -130,7 +130,7 @@
             <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
           </Simulator>
           <Target>
-            <UseTarget>1</UseTarget>
+            <UseTarget>0</UseTarget>
             <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
             <RunToMain>0</RunToMain>
             <RestoreBreakpoints>1</RestoreBreakpoints>
@@ -143,7 +143,7 @@
             <RestoreTracepoints>1</RestoreTracepoints>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>11</TargetSelection>
+          <TargetSelection>8</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -361,7 +361,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\USER;..\LIB\inc;..\CMSIS;..\BSP\LED;..\BSP\SysTick;..\BSP\Key;..\BSP\USART;..\BSP\ADC</IncludePath>
+              <IncludePath>..\USER;..\LIB\inc;..\CMSIS;..\BSP\LED;..\BSP\SysTick;..\BSP\Key;..\BSP\USART;..\BSP\ADC;..\BSP\PWM</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -438,6 +438,11 @@
               <FileName>adc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\ADC\adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\PWM\pwm.c</FilePath>
             </File>
           </Files>
         </Group>

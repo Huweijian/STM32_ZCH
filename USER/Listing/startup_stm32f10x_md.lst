@@ -476,8 +476,8 @@ ARM Macro Assembler    Page 8
               00000200 
               00000000 
 Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\output
-\startup_stm32f10x_md.d -o.\output\startup_stm32f10x_md.o -IF:\Keil_v5\ARM\RV31
-\INC -IF:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include -IF:\Keil_v5\ARM\Inc\
+\startup_stm32f10x_md.d -o.\output\startup_stm32f10x_md.o -IE:\Keil_v5\ARM\RV31
+\INC -IE:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include -IE:\Keil_v5\ARM\Inc\
 ST\STM32F10x --list=.\listing\startup_stm32f10x_md.lst ..\CMSIS\startup\arm\sta
 rtup_stm32f10x_md.s
 

@@ -2,7 +2,7 @@
 .\output\stm32f10x_cec.o: ..\LIB\inc\stm32f10x_cec.h
 .\output\stm32f10x_cec.o: ..\CMSIS\stm32f10x.h
 .\output\stm32f10x_cec.o: ..\CMSIS\core_cm3.h
-.\output\stm32f10x_cec.o: F:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\output\stm32f10x_cec.o: E:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
 .\output\stm32f10x_cec.o: ..\CMSIS\system_stm32f10x.h
 .\output\stm32f10x_cec.o: ..\USER\stm32f10x_conf.h
 .\output\stm32f10x_cec.o: ..\LIB\inc\stm32f10x_adc.h
